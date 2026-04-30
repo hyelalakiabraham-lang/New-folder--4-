@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sooglad Hair | Redefining True Beauty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- ══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+  <nav id="nav">
+    <div class="nav-logo">
+      <span class="logo-mark">G</span>
+      <span class="logo-text">Sooglad Hair</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/2348129698218" class="nav-cta" target="_blank">Order Now</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#collections" class="mob-link">Collections</a></li>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#testimonials" class="mob-link">Reviews</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/2348129698218" class="mob-cta" target="_blank">Order on WhatsApp</a>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 1 — HERO
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-lines"></div>
+
+    <div class="hero-eyebrow reveal">
+      <span class="eyebrow-line"></span>
+      <span> <strong class="abuja">Abuja's </strong>Finest Hair Atelier</span>
+      <span class="eyebrow-line"></span>
+    </div>
+
+    <h1 class="hero-title reveal delay-1">
+      Where<br />
+      <em>Beauty</em><br />
+      Is Redefined
+    </h1>
+
+    <p class="hero-sub reveal delay-2">
+      Meticulously sourced. Irresistibly priced.<br />
+      Premium hair crafted for the woman who demands both.
+    </p>
+
+    <div class="hero-actions reveal delay-3">
+      <a href="#collections" class="btn-primary">Explore Collections</a>
+      <a href="https://wa.me/2348129698218" class="btn-secondary" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.418A9.954 9.954 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zM8.5 7.5c-.28 0-.7.097-.96.374-.26.277-.98 1-1 2.45.022 1.45 1.04 2.85 1.178 3.05.14.2 2.02 3.2 5 4.35 2.48.95 2.98.76 3.52.7.54-.06 1.74-.7 1.98-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.57-.33-.3-.14-1.76-.87-2.03-.96-.27-.1-.47-.14-.67.14-.2.28-.77.96-.94 1.16-.17.2-.34.22-.64.08-.3-.14-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.18-.3-.02-.46.13-.6.14-.14.3-.34.44-.52.14-.17.19-.3.28-.5.1-.2.05-.38-.02-.52C9.9 9.36 9.22 7.85 8.97 7.6c-.2-.2-.44-.1-.47-.1z"/>
+        </svg>
+        WhatsApp Us
+      </a>
+    </div>
+
+    <div class="hero-stats reveal delay-4">
+      <div class="stat">
+        <span class="stat-num" data-target="2800">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Happy Clients</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="50">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Hair Styles</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="5">0</span><span class="stat-suffix">★</span>
+        <span class="stat-label">Rated</span>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 2 — COLLECTIONS
+  ══════════════════════════════════════════ -->
+  <section class="collections" id="collections">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Our Curation</p>
+        <h2 class="section-title">The Collection</h2>
+        <p class="section-desc">Each piece is hand-selected for density, longevity, and unrivalled finish. This is hair that speaks before you do.</p>
+      </div>
+
+      <div class="collections-grid">
+
+        <div class="col-card col-card--large reveal">
+          
+          <div class="col-card-inner">
+            <div class="col-card-visual col-visual-1">
+              <div class="col-card-glyph">
+                <img src="./img/G1.jfif" alt="">
+              </div>
+            </div>
+            <div class="col-card-content">
+              <span class="col-tag">Bestseller</span>
+              <h3>Lace Front Wigs</h3>
+              <p>Invisible hairlines. Full coverage. The most natural look achievable — worn by queens, available to you.</p>
+              <a href="https://wa.me/2348129698218" class="col-link" target="_blank">Order Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-card reveal delay-1">
+          <div class="col-card-inner">
+            <div class="col-card-visual col-visual-2">
+              <div class="col-card-glyph">
+               <img src="./img/G2.jfif" alt=""> 
+              </div>
+            </div>
+            <div class="col-card-content">
+              <h3>Body Wave</h3>
+              <p>Effortless movement. Silky texture. Perfection in every strand.</p>
+              <a href="https://wa.me/2348129698218" class="col-link" target="_blank">Order Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-card reveal delay-2">
+          <div class="col-card-inner">
+            <div class="col-card-visual col-visual-3">
+              <div class="col-card-glyph">
+                <img src="./img/G3.jfif" alt="">
+              </div>
+            </div>
+            <div class="col-card-content">
+              <h3>Kinky Curly</h3>
+              <p>Voluminous, defined curls that honour the full spectrum of beauty.</p>
+              <a href="https://wa.me/2348129698218" class="col-link" target="_blank">Order Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-card reveal delay-3">
+          <div class="col-card-inner">
+            <div class="col-card-visual col-visual-4">
+              <div class="col-card-glyph">
+                <img src="./img/G4.jfif" alt="">
+              </div>
+            </div>
+            <div class="col-card-content">
+              <h3>Straight Silk</h3>
+              <p>Sleek, glossy, and timelessly elegant. Zero frizz guaranteed.</p>
+              <a href="https://wa.me/2348129698218" class="col-link" target="_blank">Order Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-card reveal delay-4">
+          <div class="col-card-inner">
+            <div class="col-card-visual col-visual-5">
+              <div class="col-card-glyph">
+                <img src="./img/G5.jfif" alt="">
+              </div>
+            </div>
+            <div class="col-card-content">
+              <span class="col-tag col-tag--new">New In</span>
+              <h3>Coloured &amp; Ombré</h3>
+              <p>Sun-kissed tones, bold hues, and bespoke colour blends to express the real you.</p>
+              <a href="https://wa.me/2348129698218" class="col-link" target="_blank">Order Now →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 3 — ABOUT / PHILOSOPHY
+  ══════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="about-deco-line"></div>
+    <div class="container about-container">
+      <div class="about-visual reveal">
+        <div class="about-frame">
+          <div class="about-ornament">✦</div>
+          <div class="about-tagline-block">
+            <p class="about-big-quote">"Every woman deserves to feel extraordinary."</p>
+            <span class="about-attr">— Sooglad</span>
+          </div>
+          <div class="about-badges">
+            <div class="about-badge">Premium Quality</div>
+            <div class="about-badge">Abuja Trusted</div>
+            <div class="about-badge">Self-Employed</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-copy reveal delay-2">
+        <p class="section-eyebrow">Our Philosophy</p>
+        <h2 class="section-title">Luxury Is Not<br /><em>a Privilege</em></h2>
+        <div class="gold-bar"></div>
+        <p class="about-body">
+          Sooglad Hair was born from one conviction: that a woman should never have to choose between quality and affordability. We source only the finest hair — virgin, tangle-free, and full from root to tip — and make it available at prices that respect your budget.
+        </p>
+        <p class="about-body">
+          Based in Gwagwalada, Abuja, we serve women across the capital with fast delivery, honest service, and hair that genuinely transforms. Over 2,800 happy clients later, that mission has never changed.
+        </p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="pillar-icon">◈</div>
+            <div>
+              <strong>100% Virgin Hair</strong>
+              <span>Ethically sourced, chemically untreated</span>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">◈</div>
+            <div>
+              <strong>WhatsApp Direct</strong>
+              <span>Order in minutes, delivered to your door</span>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">◈</div>
+            <div>
+              <strong>Abuja-Wide Delivery</strong>
+              <span>Gwagwalada, Wuse, Garki & beyond</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 4 — TESTIMONIALS
+  ══════════════════════════════════════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Client Words</p>
+        <h2 class="section-title">What They Say</h2>
+      </div>
+
+      <div class="testi-track-wrapper">
+        <div class="testi-track" id="testi-track">
+
+          <div class="testi-item">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-body">"I have tried so many hair vendors in Abuja but Sooglad is on a different level entirely. The lace wig looked so natural — everyone thought it was my real hair. And the price? Unbelievable."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">A</div>
+              <div>
+                <strong>Amaka Okonkwo</strong>
+                <span>Wuse II, Abuja</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-item">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-body">"Ordered on WhatsApp and received my body wave wig the same day. Zero shedding, zero tangling. This is now my go-to hair vendor forever. God bless this business!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">F</div>
+              <div>
+                <strong>Fatima Abdullahi</strong>
+                <span>Gwarinpa, Abuja</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-item">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-body">"The coloured ombré wig I got was absolutely stunning. My friends couldn't stop asking where I bought it. Premium quality at a price I can actually afford — Sooglad Hair is a gem."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">B</div>
+              <div>
+                <strong>Blessing Nwosu</strong>
+                <span>Lugbe, Abuja</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-item">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-body">"Customer service is 10 out of 10. Sooglad was patient, helped me pick the right style, and even gave me tips on maintenance. The hair itself? Flawless. I am a loyal customer forever."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">C</div>
+              <div>
+                <strong>Chidinma Eze</strong>
+                <span>Kubwa, Abuja</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-item">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-body">"I bought the kinky curly wig for my sister's wedding and it was the best decision. It held up through the whole ceremony — no frizzing, no falling. Sooglad Hair delivered perfection."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">N</div>
+              <div>
+                <strong>Ngozi Obi</strong>
+                <span>Jabi, Abuja</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="testi-controls">
+          <button class="testi-btn" id="testi-prev" aria-label="Previous">←</button>
+          <div class="testi-dots" id="testi-dots"></div>
+          <button class="testi-btn" id="testi-next" aria-label="Next">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 5 — CONTACT / ORDER
+  ══════════════════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="contact-bg-ornament">SOOGLAD</div>
+    <div class="container contact-container">
+
+      <div class="contact-left reveal">
+        <p class="section-eyebrow">Begin Your Journey</p>
+        <h2 class="section-title">Ready for Your<br /><em>Transformation?</em></h2>
+        <div class="gold-bar"></div>
+        <p class="contact-body">Reach out to us directly on WhatsApp. Browse our full catalogue, ask questions, customise your order — all in one simple chat.</p>
+
+        <div class="contact-details">
+          <div class="contact-row">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.418A9.954 9.954 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zM8.5 7.5c-.28 0-.7.097-.96.374-.26.277-.98 1-1 2.45.022 1.45 1.04 2.85 1.178 3.05.14.2 2.02 3.2 5 4.35 2.48.95 2.98.76 3.52.7.54-.06 1.74-.7 1.98-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.57-.33-.3-.14-1.76-.87-2.03-.96-.27-.1-.47-.14-.67.14-.2.28-.77.96-.94 1.16-.17.2-.34.22-.64.08-.3-.14-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.18-.3-.02-.46.13-.6.14-.14.3-.34.44-.52.14-.17.19-.3.28-.5.1-.2.05-.38-.02-.52C9.9 9.36 9.22 7.85 8.97 7.6c-.2-.2-.44-.1-.47-.1z"/>
+              </svg>
+            </div>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/2348129698218" target="_blank">+234 812 969 8218</a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">◎</div>
+            <div>
+              <strong>Location</strong>
+              <span>Gwagwalada, Abuja, Nigeria</span>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">◷</div>
+            <div>
+              <strong>Hours</strong>
+              <span>Mon – Sat: 8am – 8pm</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/2348129698218" class="wa-order-btn" target="_blank">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.418A9.954 9.954 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zM8.5 7.5c-.28 0-.7.097-.96.374-.26.277-.98 1-1 2.45.022 1.45 1.04 2.85 1.178 3.05.14.2 2.02 3.2 5 4.35 2.48.95 2.98.76 3.52.7.54-.06 1.74-.7 1.98-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.57-.33-.3-.14-1.76-.87-2.03-.96-.27-.1-.47-.14-.67.14-.2.28-.77.96-.94 1.16-.17.2-.34.22-.64.08-.3-.14-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.18-.3-.02-.46.13-.6.14-.14.3-.34.44-.52.14-.17.19-.3.28-.5.1-.2.05-.38-.02-.52C9.9 9.36 9.22 7.85 8.97 7.6c-.2-.2-.44-.1-.47-.1z"/>
+          </svg>
+          Start Your Order
+        </a>
+      </div>
+
+      <div class="contact-right reveal delay-2">
+        <form class="enquiry-form" id="enquiry-form">
+          <h3 class="form-title">Send an Enquiry</h3>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">WhatsApp Number</label>
+            <input type="tel" id="phone" placeholder="+234 000 000 0000" required />
+          </div>
+          <div class="form-group">
+            <label for="hair-type">Hair Interest</label>
+            <select id="hair-type">
+              <option value="">Select a style…</option>
+              <option>Lace Front Wig</option>
+              <option>Body Wave</option>
+              <option>Kinky Curly</option>
+              <option>Straight Silk</option>
+              <option>Coloured / Ombré</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Tell us what you're looking for…"></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Enquiry</button>
+          <p class="form-note" id="form-note"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-mark">G</span>
+        <span class="logo-text">Sooglad Hair</span>
+      </div>
+      <p class="footer-tagline">Redefining true beauty — one strand at a time.</p>
+      <div class="footer-links">
+        <a href="#collections">Collections</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="https://wa.me/2348129698218" target="_blank">WhatsApp</a>
+      </div>
+      <p class="footer-copy">© 2025 Sooglad Hair. Gwagwalada, Abuja, Nigeria. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
