@@ -1,12 +1,9 @@
-/* ═══════════════════════════════════════════════
-   SOOGLAD HAIR — script.js
-   Premium interactions & animations
-═══════════════════════════════════════════════ */
+
 
 (function () {
   'use strict';
 
-  // ── CUSTOM CURSOR ─────────────────────────────
+  
   const cursor = document.getElementById('cursor');
   const follower = document.getElementById('cursor-follower');
 
@@ -50,7 +47,7 @@
     });
   }
 
-  // ── NAVIGATION SCROLL EFFECT ──────────────────
+  
   const nav = document.getElementById('nav');
   const onScroll = () => {
     if (window.scrollY > 60) {
@@ -62,7 +59,7 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // ── MOBILE MENU ───────────────────────────────
+  
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobLinks = document.querySelectorAll('.mob-link');
@@ -88,7 +85,7 @@
     });
   });
 
-  // ── SCROLL REVEAL ─────────────────────────────
+  
   const reveals = document.querySelectorAll('.reveal');
 
   const revealObserver = new IntersectionObserver(
@@ -105,7 +102,6 @@
 
   reveals.forEach(el => revealObserver.observe(el));
 
-  // ── COUNTER ANIMATION ─────────────────────────
   const counters = document.querySelectorAll('.stat-num');
   let countersStarted = false;
 
@@ -138,62 +134,6 @@
 
   if (heroSection) statsObserver.observe(heroSection);
 
-  // ── TESTIMONIAL SLIDER ────────────────────────
-  const track = document.getElementById('testi-track');
-  const prevBtn = document.getElementById('testi-prev');
-  const nextBtn = document.getElementById('testi-next');
-  const dotsContainer = document.getElementById('testi-dots');
-
-  if (track) {
-    const items = track.querySelectorAll('.testi-item');
-    let current = 0;
-    let autoplayTimer;
-
-    // Build dots
-    items.forEach((_, i) => {
-      const dot = document.createElement('div');
-      dot.className = 'testi-dot' + (i === 0 ? ' active' : '');
-      dot.addEventListener('click', () => goTo(i));
-      dotsContainer.appendChild(dot);
-    });
-
-    const dots = dotsContainer.querySelectorAll('.testi-dot');
-
-    const goTo = (index) => {
-      current = (index + items.length) % items.length;
-      track.style.transform = `translateX(-${current * 100}%)`;
-      dots.forEach((d, i) => d.classList.toggle('active', i === current));
-    };
-
-    const next = () => goTo(current + 1);
-    const prev = () => goTo(current - 1);
-
-    nextBtn.addEventListener('click', () => { next(); resetAutoplay(); });
-    prevBtn.addEventListener('click', () => { prev(); resetAutoplay(); });
-
-    // Touch/swipe support
-    let touchStartX = 0;
-    track.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
-    track.addEventListener('touchend', e => {
-      const diff = touchStartX - e.changedTouches[0].clientX;
-      if (Math.abs(diff) > 50) {
-        diff > 0 ? next() : prev();
-        resetAutoplay();
-      }
-    }, { passive: true });
-
-    // Autoplay
-    const startAutoplay = () => {
-      autoplayTimer = setInterval(next, 5000);
-    };
-    const resetAutoplay = () => {
-      clearInterval(autoplayTimer);
-      startAutoplay();
-    };
-    startAutoplay();
-  }
-
-  // ── ENQUIRY FORM ──────────────────────────────
   const form = document.getElementById('enquiry-form');
   const formNote = document.getElementById('form-note');
 
@@ -212,7 +152,7 @@
         return;
       }
 
-      // Build WhatsApp message
+      
       const waText = encodeURIComponent(
         `Hello Sooglad! 👋\n\n` +
         `My name is ${name}.\n` +
@@ -238,7 +178,6 @@
     });
   }
 
-  // ── SMOOTH ANCHOR SCROLL ──────────────────────
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
       const target = document.querySelector(link.getAttribute('href'));
@@ -251,7 +190,7 @@
     });
   });
 
-  // ── PARALLAX HERO GRID ─────────────────────────
+
   const heroBg = document.querySelector('.hero-bg-lines');
   if (heroBg) {
     window.addEventListener('scroll', () => {
@@ -260,7 +199,7 @@
     }, { passive: true });
   }
 
-  // ── COLLECTION CARD TILT ──────────────────────
+  
   const colCards = document.querySelectorAll('.col-card-inner');
   colCards.forEach(card => {
     card.addEventListener('mousemove', e => {
@@ -274,7 +213,7 @@
     });
   });
 
-  // ── GOLD LINE ENTRY ANIMATION ─────────────────
+
   // Animate the gold-bar elements into view
   const goldBars = document.querySelectorAll('.gold-bar');
   const barObserver = new IntersectionObserver(entries => {
